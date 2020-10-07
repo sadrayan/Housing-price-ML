@@ -36,12 +36,9 @@ Note: update your `$dockerpath` location.
 
 ## Docker and Kubernetes requirements
 
-* Setup and Configure Docker locally
+* Setup and Configure [Docker](https://docs.docker.com/engine/install/ubuntu/) locally
 * Setup and Configure Kubernetes locally
     * make sure `minikube` is installed
     * run `minikube start` (with `su userName`*)
     * verify kubectl configs:
         * `kubectl config view`
-
-* Create Flask app in Container
-* Run via kubectl
