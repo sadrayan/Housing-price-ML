@@ -9,7 +9,9 @@ Demonstraion of microservices by deploying machine learning interence API using 
 
 ## Setup the Environment
 
-* Create a virtualenv and activate it
+* Create a virtualenv and activate it (make setup)
+    ** `python3 -m venv ~/.devops`
+	** `source ~/.devops/bin/activate`
 * Run `make install` to install the necessary dependencies
 
 ### Running `app.py`
