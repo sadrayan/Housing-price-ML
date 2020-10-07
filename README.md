@@ -5,7 +5,7 @@ Demonstraion of microservices by deploying machine learning interence API using 
 
 
 ## Diagram
-![Diagram](Kubernetes diagram.png)
+![Diagram](KubernetesDiagram.png)
 
 ## Setup the local Environment (optional, use Docker!)
 
