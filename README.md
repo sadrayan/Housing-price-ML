@@ -1,6 +1,7 @@
 # Housing-price-ML
 Demonstraion of microservices by deploying machine learning interence API using Docker and Kubernetes, and python sklearn 
 
+CircleCI integration
 [![CircleCI](https://circleci.com/gh/sadrayan/Housing-price-ML.svg?style=svg)](https://circleci.com/gh/sadrayan/Housing-price-ML)
 
 
