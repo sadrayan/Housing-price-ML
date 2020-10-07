@@ -4,10 +4,10 @@ Demonstraion of microservices by deploying machine learning interence API using 
 [![CircleCI](https://circleci.com/gh/sadrayan/Housing-price-ML.svg?style=svg)](https://circleci.com/gh/sadrayan/Housing-price-ML)
 
 
+## Diagram
+![Diagram](Kubernetes diagram.png)
 
----
-
-## Setup the Environment
+## Setup the local Environment (optional, use Docker!)
 
 * Create a virtualenv and activate it (make setup)
     * `python3 -m venv ~/.devops`
@@ -16,16 +16,31 @@ Demonstraion of microservices by deploying machine learning interence API using 
 
 ## Running `app.py`
 
-1. Standalone:  `python app.py`
-2. Run in Docker:  `./run_docker.sh`
-3. Run in Kubernetes:  `./run_kubernetes.sh`
+* Standalone:  `python app.py`
+
+## Running Docker
+
+1. Run in Docker:  `./run_docker.sh`
+2. Tag and push Docker to Dockerhub `./upload_docker.sh` (used by kubernetes in next step)
+
+## Running Kubernetes
+
+* Run in Kubernetes:  `./run_kubernetes.sh`
+
+Note: update your `$dockerpath` location.
 
 ## Model Prediction
+
 * Run `./make_prediction.sh`
 
-## Kubernetes Steps
+## Docker and Kubernetes requirements
 
 * Setup and Configure Docker locally
 * Setup and Configure Kubernetes locally
+    * make sure `minikube` is installed
+    * run `minikube start` (with `su userName`*)
+    * verify kubectl configs:
+        * `kubectl config view`
+
 * Create Flask app in Container
 * Run via kubectl
