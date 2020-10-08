@@ -42,3 +42,6 @@ Note: update your `$dockerpath` location.
     * run `minikube start` (with `su userName`*)
     * verify kubectl configs:
         * `kubectl config view`
+    * Stop/Delete clustrs
+        * `minukube delete`
+        * `minikube stop`
